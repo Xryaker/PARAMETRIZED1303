@@ -12,12 +12,12 @@ public class BaseClass {
     @BeforeClass
     public static void create() {
         driver = DriverFactory.greateDriver(WEBDRIVERS.CHROMECLEAN);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
     }
 
     @AfterClass
     public static void end() throws InterruptedException {
-        Thread.sleep(6000);
+      //  Thread.sleep(6000);
         driver.quit();
     }
 }

@@ -1,5 +1,6 @@
 package pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,6 +13,7 @@ public class WIKIPage {
     @FindBy(id="ca-history")
     WebElement tab3;
 
+    @Step("jkjskskks")
     public String tab1Test( ){
         return tab1.findElement(By.tagName("span")).getText();
     }
